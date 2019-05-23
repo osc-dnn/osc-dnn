@@ -13,11 +13,11 @@ We predict reorganization energy of organic semiconductors using deep neural net
 ## How to run the scripts
 
 - Edit settings.ini and settings.py with the proper input and output filenames. 
-- Set the hyperparameter values in gridSearchOsc.py.
+- Set the hyperparameter values in grid_search_osc.py.
 - Then run 
 
 ```
-python gridSearchOsc.py
+python grid_search_osc.py
 ```
 This will run all the folds and output statistics into the given outputfile.
 
