@@ -13,7 +13,7 @@ We predict reorganization energy of organic semiconductors using deep neural net
 ## How to run the scripts
 
 - Edit settings.ini and settings.py with the proper input and output filenames. 
-- In gridSearchOsc.py the hyperparameters need to be set.
+- Set the hyperparameter values in gridSearchOsc.py.
 - Then run 
 
 ```
