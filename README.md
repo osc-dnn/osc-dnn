@@ -2,7 +2,7 @@
 ## Introduction
 
 
-We predict reorganization energy of organic semiconductors using deep neural networks. We experimented with Circular Fingerprints(CF), Molecular Signatures, and Molecular Transform Descriptors. The code can be used with other descriptors as well, since the descriptors are not generated within the code but read from the input files.
+We predict reorganization energy of organic semiconductors using deep neural networks. We experimented with Circular Fingerprints, Molecular Signatures, and Molecular Transform Descriptors. The code can be used with other descriptors as well, since the descriptors are not generated within the code but read from the input files.
 
 
 ## Required Packages
