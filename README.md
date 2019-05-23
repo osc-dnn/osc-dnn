@@ -1,5 +1,4 @@
-"# osc-dnn" 
-
+# Prediction of Intramolecular Reorganization Energy Using Machine Learning
 ## Introduction
 
 
