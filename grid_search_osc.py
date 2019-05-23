@@ -3,7 +3,7 @@
 import re
 from itertools import product
 import settings
-import dnn_keras_github
+import dnn_osc
 import tensorflow as tf
 import math
 import numpy as np
@@ -11,18 +11,18 @@ import numpy as np
 def main():	
 	tf.logging.set_verbosity(tf.logging.INFO)
 	variables = settings.args_keys
-	hidden_units=[[1000,  1000, 1000, 1]]
-	cv = [5]
-	stratified = [True]
+	hidden_units=[[1000,  1000, 1000, 1]] #number of neurons in each hidden layer and the output layer
+	cv = [5]  # k in k-fold cross validation
+	stratified = [True]  #whether to sort reorganization energies of train data before train-test split
 	learning_rate = [0.0003]
 	dropout = [0.1]
-	normalization = [True]
-	pca=[False]
-	pcaVec = [1000]
-	batch_size = [64]
+	normalization = [True]  
+	pca=[False]     #whether to apply Pricipal Component Analysis on the descriptor space.
+	pcaVec = [1000] #Number of principal components
+	batch_size = [64]    
 	train_steps = [2500]
-	reorg_norm_factor = [27211.4] 
-	train_percent = [0.80]
+	reorg_norm_factor = [27211.4]  #hartree to meV conversion factor 
+	train_percent = [0.80]         #what percentage of data is used for training
 	
 	
 	big = 0.01 #learning rate upper end
@@ -57,7 +57,7 @@ def main():
 		
 		print('*** Done modifiying settings.ini ***') 
 		
-		dnn_keras_github.main()
+		dnn_osc.main()
 		
 		oldGrid = grid
 	
